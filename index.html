@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VivaMax 18+ for ADULTS</title>
+  <link rel="stylesheet" href="styles.css">
+
+<body>
+  <!-- Modal -->
+  <div id="access-modal" class="modal">
+    <div class="modal-content">
+      <h2 class="neon-text">⚠️⚠️Access Code⚠️⚠️</h2>
+      <input type="password" id="access-code" placeholder="Access Code" class="neon-input">
+      <button id="submit-code" class="neon-button">Submit</button>
+      <p id="error-message" class="error hidden">⚠️Warning Wrong Code⚠️</p>
+    </div>
+  </div>
+
+  <!-- Hidden Content -->
+  <div id="hidden-content" class="hidden-content hidden">
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+<style>
+    /* General Styles */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: #000000;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  
+}
+
+/* Modal Styles */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  
+  
+}
+
+.modal-content {
+  background: #111;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 300px;
+  box-shadow: 0 0 10px rgb(29, 236, 251), 0 0 20px rgb(242, 4, 250), 0 0 30px rgb(192, 255, 2), 0 0 40px rgb(10, 35, 35);
+  animation: neon-glow-hover 3s infinite alternate;
+  
+}
+
+/* Neon Animation */
+.neon-text {
+  font-size: 24px;
+  color: rgb(255, 0, 0);
+  text-shadow: 0 0 5px rgb(64, 255, 0), 0 0 20px rgb(0, 255, 179), 0 0 30px #00f, 0 0 40px #00f;
+  animation: blink 3s infinite;
+  -webkit-box-reflect: below 10px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4));
+  
+
+}
+
+.neon-input, .neon-button {
+  margin-top: 20px;
+  padding: 10px;
+  width: 80%;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  font-size: 16px;
+  box-shadow: 0 0 20px rgb(3, 96, 57) inset, 0 0 20px rgb(170, 0, 255);
+  animation: animate 0.7s linear infinite;
+  
+  
+  
+}
+
+.neon-input {
+  background: #222;
+  color: rgb(255, 94, 0);
+  text-shadow: 0 0 10px rgb(255, 0, 0);
+  box-shadow: 0 0 10px #0ff inset;
+  transition: box-shadow 0.3s;
+  text-align: center;
+  animation: animate 0.7s linear infinite;
+  animation: neon-glow-hover 0.5s infinite alternate;
+}
+
+.neon-input:focus {
+  box-shadow: 0 0 20px rgb(157, 24, 24) inset, 0 0 20px rgb(166, 0, 255);
+  animation: shake3856 0.3s linear infinite both;
+  -webkit-box-reflect: below 10px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4));
+  
+}
+
+.neon-button {
+  background: rgb(4, 4, 122);
+  color: #000;
+  cursor: pointer;
+  transition: background 0.3s;
+  background: linear-gradient(270deg, rgba(63, 105, 183, 0.681) 0%, rgba(31, 215, 232, 0.873) 60%);
+  
+}
+
+.neon-button:hover {
+  background: #00f;
+  animation: shake3856 0.3s linear infinite both;
+}
+
+.error {
+color: red;
+font-size: 14px;
+text-shadow: 0 0 5px red;
+margin-top: 10px;
+animation: blink 1s infinite;
+
+
+}
+
+@keyframes animate {
+  100% {
+    filter: hue-rotate(360deg);
+  }
+
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+
+}
+
+@keyframes shake3856 {
+ 0% {
+  -webkit-transform: translate(0);
+  transform: translate(0);
+ }
+
+ 20% {
+  -webkit-transform: translate(-2px, 2px);
+  transform: translate(-2px, 2px);
+ }
+
+ 40% {
+  -webkit-transform: translate(-2px, -2px);
+  transform: translate(-2px, -2px);
+ }
+
+ 60% {
+  -webkit-transform: translate(2px, 2px);
+  transform: translate(2px, 2px);
+ }
+
+ 80% {
+  -webkit-transform: translate(2px, -2px);
+  transform: translate(2px, -2px);
+ }
+
+ 100% {
+  -webkit-transform: translate(0);
+  transform: translate(0);
+ }
+
+}
+
+@keyframes neon-glow {
+  0% {
+    box-shadow: 0 0 20px #00ff3c, 0 0 10px #ff00ff, 0 0 15px #ff0000;
+  }
+  70% {
+    box-shadow: 0 0 30px #000000, 0 0 40px #ff0000, 0 0 30px #ff0000;
+  }
+  100% {
+    box-shadow: 0 0 30px #ff00ff, 0 0 30px #ff00ff, 0 0 40px #ff00ff;
+  }
+}
+
+@keyframes neon-glow-hover {
+  0% {
+    box-shadow: 0 0 40px #ff00ff, 0 0 20px #af02ff, 0 0 40px #ff00ff;
+  }
+  70% {
+    box-shadow: 0 0 30px #000000, 0 0 40px #ff0000, 0 0 15px #ff0000;
+  }
+  100% {
+    box-shadow: 0 0 50px #ff0000, 0 0 30px #ffff00, 0 0 20px #00ff3c;
+  }
+
+}
+
+
+.hidden {
+  display: none;
+}
+
+/* Hidden Content */
+.hidden-content {
+  text-align: center;
+}
+
+</style>
+<script>
+
+    // JavaScript for Modal and Hidden Content
+const correctCode = "121986"; // Define the correct access code
+const accessCodeInput = document.getElementById("access-code");
+const submitButton = document.getElementById("submit-code");
+const errorMessage = document.getElementById("error-message");
+const modal = document.getElementById("access-modal");
+const hiddenContent = document.getElementById("hidden-content");
+
+
+
+// Alarm sound
+const alarmSound = new Audio("ytmp3free.cc_arthur-morgan-alarm-description-for-originaldownload-youtubemp3free.org.mp3");
+
+submitButton.addEventListener("click", () => {
+  const userCode = accessCodeInput.value;
+
+  if (userCode === correctCode) {
+    // Open direct content page
+    window.location.href = "https://bibamax.com/home/"; // Replace with your link
+    // Correct code: hide modal and show hidden content
+    modal.classList.add("hidden");
+    hiddenContent.classList.remove("hidden");
+  } else {
+    // Wrong code: trigger alarm and show error message
+    errorMessage.classList.remove("hidden");
+    alarmSound.play();
+    accessCodeInput.value = ""; // Clear input field
+  }
+
+          
+});
+
+ 
+</script>
+
